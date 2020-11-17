@@ -1,0 +1,147 @@
+body{
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/pattern-curve.svg),url(images/pattern-bg.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: left bottom, 90% 20%;
+    background-attachment: fixed,fixed;
+    background-size: auto, 40% ;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 78%;
+    height: 390px;
+    margin: 6% 11%;
+    position: relative;
+}
+
+.content {
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 20% 4%;
+    width: 65%;
+    padding-left: 10px;
+    padding-top: 70px;
+    z-index: 3;
+    position: absolute;
+    font-weight: 300;
+}
+
+.sliderImg {
+    height: 100%;
+    float: right;
+    border-radius: 5px;
+    z-index: 1;
+    
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.highlight {
+    color: hsl(240, 18%, 77%);
+    font-weight: 500;
+}
+
+.prev, .next {
+    position: absolute;
+    display: inline-block;
+    padding: 8px;
+    width: auto;
+    background-color: white;
+    outline: 0;
+    transition: 0.6s ease;
+}
+
+.prev {
+    left: 64%;
+    border-right: 0;
+    bottom: 25%;
+    padding-left: 15px;
+    padding-right: 18px;
+    border-radius: 50% 0 0 50%;
+}
+
+.next {
+    left: 66%;
+    bottom: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-left: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+.mySlides {
+    display: none;
+    transition: 1s ease;
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px){
+    body{
+        text-align: center;
+                
+    }
+    
+    .container {
+        display: block;
+        width: 70%;
+        margin: 15%;
+        
+    }
+    
+    .content {
+        position: relative;
+        padding: 15% 0;
+        font-size: 20px;
+        background-size: 30%;
+        
+        
+    }
+    
+    .sliderImg {
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+    
+    .prev{
+        position: absolute;
+        bottom: 50%;
+        left: 35%;
+    }
+    
+    .next {
+        position: absolute;
+        bottom: 50%;
+        left: 46%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
